@@ -1,0 +1,31 @@
+13:00:33:934  INFO 39384 --- [main] com.hmall.HMallApplication               : Starting HMallApplication using Java 21.0.4 on LAPTOP-QO6FIFUE with PID 39384 (C:\Users\Chen\Desktop\develope_note\Spring\SpringCloud\hmall\hm-service\target\classes started by Chen in C:\Users\Chen\Desktop\develope_note\Spring\SpringCloud\hmall)
+13:00:33:941 DEBUG 39384 --- [main] com.hmall.HMallApplication               : Running with Spring Boot v2.7.12, Spring v5.3.27
+13:00:33:942  INFO 39384 --- [main] com.hmall.HMallApplication               : The following 1 profile is active: "local"
+13:00:35:335  WARN 39384 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.hmall.HMallApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'mvcConfig' for bean class [com.hmall.item.config.MvcConfig] conflicts with existing, non-compatible bean definition of same name and class [com.hmall.config.MvcConfig]
+13:00:35:356 ERROR 39384 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.hmall.HMallApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'mvcConfig' for bean class [com.hmall.item.config.MvcConfig] conflicts with existing, non-compatible bean definition of same name and class [com.hmall.config.MvcConfig]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:188) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:748) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.12.jar:2.7.12]
+	at com.hmall.HMallApplication.main(HMallApplication.java:11) ~[classes/:na]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'mvcConfig' for bean class [com.hmall.item.config.MvcConfig] conflicts with existing, non-compatible bean definition of same name and class [com.hmall.config.MvcConfig]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:349) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:287) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:295) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174) ~[spring-context-5.3.27.jar:5.3.27]
+	... 13 common frames omitted
+

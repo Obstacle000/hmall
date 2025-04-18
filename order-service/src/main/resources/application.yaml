@@ -1,0 +1,48 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: order-service
+  cloud:
+    nacos:
+      server-addr: 192.168.194.128:8848
+  profiles:
+    active: dev
+  datasource:
+    # 我们写代码的时候用local,部署的时候用dev
+    url: jdbc:mysql://${hm.db.host}:3306/hm-trade?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: ${hm.db.pw}
+mybatis-plus:
+  configuration:
+    default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
+  global-config:
+    db-config:
+      update-strategy: not_null # 就是更新业务,我们需要用对象.set...来更新,此时没有更新的字段是null,总不能把null更新了吧
+      id-type: auto
+logging:
+  level:
+    com.hmall: debug
+  pattern:
+    dateformat: HH:mm:ss:SSS
+  file:
+    path: "logs/${spring.application.name}"# 保证每一个微服务的log目录不同
+knife4j: # swagger
+  enable: true
+  openapi:
+    title: 黑马商订单管理接口文档
+    description: "黑马订单管理接口文档"
+    email: zhanghuyi@itcast.cn
+    concat: 虎哥
+    url: https://www.itcast.cn
+    version: v1.0.0
+    group:
+      default:
+        group-name: default
+        api-rule: package
+        api-rule-resources:
+          - com.hmall.order.controller
+feign:
+  okhttp:
+    enabled: true

@@ -1,0 +1,56 @@
+13:54:56:640  INFO 23236 --- [main] com.hmall.order.OrderApplication         : Starting OrderApplication using Java 23.0.1 on LAPTOP-QO6FIFUE with PID 23236 (C:\Users\Chen\Desktop\develope_note\Spring\SpringCloud\hmall\order-service\target\classes started by Chen in C:\Users\Chen\Desktop\develope_note\Spring\SpringCloud\hmall)
+13:54:56:641 DEBUG 23236 --- [main] com.hmall.order.OrderApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
+13:54:56:641  INFO 23236 --- [main] com.hmall.order.OrderApplication         : The following 1 profile is active: "local"
+13:54:57:257  INFO 23236 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+13:54:57:259  INFO 23236 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+13:54:57:274  INFO 23236 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+13:54:57:424  INFO 23236 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fe20ab63-8b46-3928-a7f6-a92771249c96
+13:54:57:741  INFO 23236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+13:54:57:742  INFO 23236 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+13:54:57:742  INFO 23236 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+13:54:57:742  INFO 23236 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+13:54:57:754  INFO 23236 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+13:54:57:761  INFO 23236 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+13:54:57:761  INFO 23236 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+13:54:57:862  INFO 23236 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+13:54:57:862  INFO 23236 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1174 ms
+13:54:58:005  INFO 23236 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+13:54:58:398  INFO 23236 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+13:54:58:759  INFO 23236 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+13:54:59:134  INFO 23236 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of bf036c72-6519-4fa8-83e9-2c113f5907cf
+13:54:59:180  INFO 23236 --- [main] org.reflections.Reflections              : Reflections took 22 ms to scan 1 urls, producing 3 keys and 6 values 
+13:54:59:195  INFO 23236 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 4 keys and 9 values 
+13:54:59:201  INFO 23236 --- [main] org.reflections.Reflections              : Reflections took 3 ms to scan 1 urls, producing 3 keys and 10 values 
+13:54:59:203  WARN 23236 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+13:54:59:210  INFO 23236 --- [main] org.reflections.Reflections              : Reflections took 7 ms to scan 1 urls, producing 1 keys and 5 values 
+13:54:59:216  INFO 23236 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 1 keys and 7 values 
+13:54:59:221  INFO 23236 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 2 keys and 8 values 
+13:54:59:223  WARN 23236 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+13:54:59:224  INFO 23236 --- [main] com.alibaba.nacos.common.remote.client   : [bf036c72-6519-4fa8-83e9-2c113f5907cf] RpcClient init label, labels = {module=naming, source=sdk}
+13:54:59:224  INFO 23236 --- [main] com.alibaba.nacos.common.remote.client   : [bf036c72-6519-4fa8-83e9-2c113f5907cf] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+13:54:59:224  INFO 23236 --- [main] com.alibaba.nacos.common.remote.client   : [bf036c72-6519-4fa8-83e9-2c113f5907cf] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+13:54:59:224  INFO 23236 --- [main] com.alibaba.nacos.common.remote.client   : [bf036c72-6519-4fa8-83e9-2c113f5907cf] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+13:54:59:226  INFO 23236 --- [main] com.alibaba.nacos.common.remote.client   : [bf036c72-6519-4fa8-83e9-2c113f5907cf] Try to connect to server on start up, server: {serverIp = '192.168.194.128', server main port = 8848}
+13:54:59:861  INFO 23236 --- [main] com.alibaba.nacos.common.remote.client   : [bf036c72-6519-4fa8-83e9-2c113f5907cf] Success to connect to server [192.168.194.128:8848] on start up, connectionId = 1744955699158_192.168.194.1_53128
+13:54:59:862  INFO 23236 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [bf036c72-6519-4fa8-83e9-2c113f5907cf] Notify connected event to listeners.
+13:54:59:863  INFO 23236 --- [main] com.alibaba.nacos.common.remote.client   : [bf036c72-6519-4fa8-83e9-2c113f5907cf] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+13:54:59:863  INFO 23236 --- [main] com.alibaba.nacos.common.remote.client   : [bf036c72-6519-4fa8-83e9-2c113f5907cf] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda/0x000001bf16929d30
+13:54:59:941  INFO 23236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+13:54:59:964  INFO 23236 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP order-service 192.168.194.1:8084 register finished
+13:54:59:966  INFO 23236 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+13:54:59:968  INFO 23236 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+13:54:59:980  INFO 23236 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+13:55:00:042  INFO 23236 --- [main] com.hmall.order.OrderApplication         : Started OrderApplication in 3.839 seconds (JVM running for 4.557)
+13:55:00:526  INFO 23236 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [bf036c72-6519-4fa8-83e9-2c113f5907cf] Receive server push request, request = NotifySubscriberRequest, requestId = 1
+13:55:00:528  INFO 23236 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [bf036c72-6519-4fa8-83e9-2c113f5907cf] Ack server push request, request = NotifySubscriberRequest, requestId = 1
+13:55:23:351  INFO 23236 --- [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:55:23:351  INFO 23236 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+13:55:23:352  INFO 23236 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+13:55:29:901  INFO 23236 --- [http-nio-8084-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+13:55:30:160  INFO 23236 --- [http-nio-8084-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+13:55:30:165 DEBUG 23236 --- [http-nio-8084-exec-4] c.h.order.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+13:55:30:181 DEBUG 23236 --- [http-nio-8084-exec-4] c.h.order.mapper.OrderMapper.selectById  : ==> Parameters: 1(Long)
+13:55:30:198 DEBUG 23236 --- [http-nio-8084-exec-4] c.h.order.mapper.OrderMapper.selectById  : <==      Total: 0
+13:56:08:554 DEBUG 23236 --- [http-nio-8084-exec-4] c.h.order.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+13:56:08:554 DEBUG 23236 --- [http-nio-8084-exec-4] c.h.order.mapper.OrderMapper.selectById  : ==> Parameters: 123865420(Long)
+13:56:08:564 DEBUG 23236 --- [http-nio-8084-exec-4] c.h.order.mapper.OrderMapper.selectById  : <==      Total: 1

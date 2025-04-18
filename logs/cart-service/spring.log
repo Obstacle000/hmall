@@ -1,0 +1,44 @@
+14:31:20:099  INFO 5140 --- [main] com.hmall.cart.CartApplication           : Starting CartApplication using Java 21.0.4 on LAPTOP-QO6FIFUE with PID 5140 (C:\Users\Chen\Desktop\develope_note\Spring\SpringCloud\hmall\cart-service\target\classes started by Chen in C:\Users\Chen\Desktop\develope_note\Spring\SpringCloud\hmall)
+14:31:20:101 DEBUG 5140 --- [main] com.hmall.cart.CartApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+14:31:20:102  INFO 5140 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "local"
+14:31:20:586  INFO 5140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+14:31:20:588  INFO 5140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+14:31:20:599  INFO 5140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+14:31:20:747  INFO 5140 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d6a55e02-7ff5-3d82-87d2-3b9b07a4e1bd
+14:31:20:996  INFO 5140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+14:31:20:997  INFO 5140 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+14:31:20:998  INFO 5140 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+14:31:20:998  INFO 5140 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+14:31:21:000  INFO 5140 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+14:31:21:005  INFO 5140 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+14:31:21:005  INFO 5140 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+14:31:21:088  INFO 5140 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+14:31:21:088  INFO 5140 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 959 ms
+14:31:21:232  INFO 5140 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+14:31:21:795  INFO 5140 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+14:31:22:112  INFO 5140 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of c95a4ade-23b8-4ad9-9672-7c9cc9b2ca87
+14:31:22:146  INFO 5140 --- [main] org.reflections.Reflections              : Reflections took 17 ms to scan 1 urls, producing 3 keys and 6 values 
+14:31:22:162  INFO 5140 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 4 keys and 9 values 
+14:31:22:168  INFO 5140 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 3 keys and 10 values 
+14:31:22:169  WARN 5140 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+14:31:22:173  INFO 5140 --- [main] org.reflections.Reflections              : Reflections took 3 ms to scan 1 urls, producing 1 keys and 5 values 
+14:31:22:183  INFO 5140 --- [main] org.reflections.Reflections              : Reflections took 9 ms to scan 1 urls, producing 1 keys and 7 values 
+14:31:22:190  INFO 5140 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 2 keys and 8 values 
+14:31:22:192  WARN 5140 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+14:31:22:193  INFO 5140 --- [main] com.alibaba.nacos.common.remote.client   : [c95a4ade-23b8-4ad9-9672-7c9cc9b2ca87] RpcClient init label, labels = {module=naming, source=sdk}
+14:31:22:194  INFO 5140 --- [main] com.alibaba.nacos.common.remote.client   : [c95a4ade-23b8-4ad9-9672-7c9cc9b2ca87] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+14:31:22:194  INFO 5140 --- [main] com.alibaba.nacos.common.remote.client   : [c95a4ade-23b8-4ad9-9672-7c9cc9b2ca87] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+14:31:22:195  INFO 5140 --- [main] com.alibaba.nacos.common.remote.client   : [c95a4ade-23b8-4ad9-9672-7c9cc9b2ca87] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+14:31:22:196  INFO 5140 --- [main] com.alibaba.nacos.common.remote.client   : [c95a4ade-23b8-4ad9-9672-7c9cc9b2ca87] Try to connect to server on start up, server: {serverIp = '192.168.194.128', server main port = 8848}
+14:31:22:754  INFO 5140 --- [main] com.alibaba.nacos.common.remote.client   : [c95a4ade-23b8-4ad9-9672-7c9cc9b2ca87] Success to connect to server [192.168.194.128:8848] on start up, connectionId = 1744957882122_192.168.194.1_57315
+14:31:22:754  INFO 5140 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [c95a4ade-23b8-4ad9-9672-7c9cc9b2ca87] Notify connected event to listeners.
+14:31:22:754  INFO 5140 --- [main] com.alibaba.nacos.common.remote.client   : [c95a4ade-23b8-4ad9-9672-7c9cc9b2ca87] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+14:31:22:754  INFO 5140 --- [main] com.alibaba.nacos.common.remote.client   : [c95a4ade-23b8-4ad9-9672-7c9cc9b2ca87] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda/0x000002202e8f7900
+14:31:22:795  INFO 5140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+14:31:22:805  INFO 5140 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP cart-service 192.168.194.1:8082 register finished
+14:31:22:806  INFO 5140 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+14:31:22:808  INFO 5140 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+14:31:22:822  INFO 5140 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+14:31:22:877  INFO 5140 --- [main] com.hmall.cart.CartApplication           : Started CartApplication in 3.125 seconds (JVM running for 3.642)
+14:31:23:333  INFO 5140 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [c95a4ade-23b8-4ad9-9672-7c9cc9b2ca87] Receive server push request, request = NotifySubscriberRequest, requestId = 3
+14:31:23:345  INFO 5140 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [c95a4ade-23b8-4ad9-9672-7c9cc9b2ca87] Ack server push request, request = NotifySubscriberRequest, requestId = 3
