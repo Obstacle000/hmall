@@ -20,6 +20,9 @@ public class SecurityConfig {
 
     @Bean
     public KeyPair keyPair(JwtProperties properties){
+        // 密钥库（Keystore）是一种存储加密密钥、
+        // 证书等敏感信息的容器。Java 中的密钥库通常使用 .jks 或 .p12 文件格式
+        // 这里的hmall.jks文件就是密钥库
         // 获取秘钥工厂
         KeyStoreKeyFactory keyStoreKeyFactory =
                 new KeyStoreKeyFactory(

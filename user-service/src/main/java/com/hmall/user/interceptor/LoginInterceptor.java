@@ -1,5 +1,6 @@
 package com.hmall.user.interceptor;
 
+import cn.hutool.jwt.JWTException;
 import com.hmall.item.common.utils.UserContext;
 import com.hmall.user.utils.JwtTool;
 import lombok.RequiredArgsConstructor;
@@ -16,6 +17,8 @@ public class LoginInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+
+
         // 1.获取请求头中的 token
         String token = request.getHeader("authorization");
         // 2.校验token

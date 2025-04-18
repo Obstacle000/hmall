@@ -19,6 +19,7 @@ public class JwtTool {
     private final JWTSigner jwtSigner;
 
     public JwtTool(KeyPair keyPair) {
+        // KeyPair 是一个包含 公钥 和 私钥 的对象
         this.jwtSigner = JWTSignerUtil.createSigner("rs256", keyPair);
     }
 
