@@ -1,4 +1,4 @@
-package com.hmall.item.common.domain;
+package com.hmall.common.domain;
 
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.metadata.OrderItem;

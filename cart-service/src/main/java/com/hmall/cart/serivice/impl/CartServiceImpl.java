@@ -10,10 +10,10 @@ import com.hmall.cart.domain.po.Cart;
 import com.hmall.cart.domain.vo.CartVO;
 import com.hmall.cart.mapper.CartMapper;
 import com.hmall.cart.serivice.ICartService;
-import com.hmall.item.common.exception.BizIllegalException;
-import com.hmall.item.common.utils.BeanUtils;
-import com.hmall.item.common.utils.CollUtils;
-import com.hmall.item.common.utils.UserContext;
+import com.hmall.common.exception.BizIllegalException;
+import com.hmall.common.utils.BeanUtils;
+import com.hmall.common.utils.CollUtils;
+import com.hmall.common.utils.UserContext;
 import lombok.RequiredArgsConstructor;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.stereotype.Service;
@@ -48,7 +48,7 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
     @Override
     public void addItem2Cart(CartFormDTO cartFormDTO) {
         // 1.获取登录用户
-        Long userId = 1L;/* TODO UserContext.getUser()*/
+        Long userId = UserContext.getUser();
 
         // 2.判断是否已经存在
         if(checkItemExists(cartFormDTO.getItemId(), userId)){
@@ -71,7 +71,7 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
     @Override
     public List<CartVO> queryMyCarts() {
         // 1.查询我的购物车列表
-        List<Cart> carts = lambdaQuery().eq(Cart::getUserId,1L/* TODO UserContext.getUser()*/).list();
+        List<Cart> carts = lambdaQuery().eq(Cart::getUserId,UserContext.getUser()).list();
         if (CollUtils.isEmpty(carts)) {
             return CollUtils.emptyList();
         }

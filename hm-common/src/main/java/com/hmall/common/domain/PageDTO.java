@@ -1,10 +1,10 @@
-package com.hmall.item.common.domain;
+package com.hmall.common.domain;
 
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.hmall.item.common.utils.BeanUtils;
-import com.hmall.item.common.utils.CollUtils;
-import com.hmall.item.common.utils.Convert;
+import com.hmall.common.utils.BeanUtils;
+import com.hmall.common.utils.CollUtils;
+import com.hmall.common.utils.Convert;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

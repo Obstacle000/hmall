@@ -1,4 +1,4 @@
-package com.hmall.item.common.utils;
+package com.hmall.common.utils;
 
 public class UserContext {
     private static final ThreadLocal<Long> tl = new ThreadLocal<>();

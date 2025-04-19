@@ -4,7 +4,7 @@ import com.hmall.order.domain.dto.OrderFormDTO;
 import com.hmall.order.domain.po.Order;
 import com.hmall.order.domain.vo.OrderVO;
 import com.hmall.order.service.IOrderService;
-import com.hmall.item.common.utils.BeanUtils;
+import com.hmall.common.utils.BeanUtils;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;

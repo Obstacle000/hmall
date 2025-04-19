@@ -1,6 +1,6 @@
 package com.hmall.item.interceptor;
 
-import com.hmall.item.common.utils.UserContext;
+import com.hmall.common.utils.UserContext;
 import com.hmall.item.utils.JwtTool;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.servlet.HandlerInterceptor;

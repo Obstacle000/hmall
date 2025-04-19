@@ -1,10 +1,10 @@
 package com.hmall.user.controller;
 
 
-import com.hmall.item.common.exception.BadRequestException;
-import com.hmall.item.common.utils.BeanUtils;
-import com.hmall.item.common.utils.CollUtils;
-import com.hmall.item.common.utils.UserContext;
+import com.hmall.common.exception.BadRequestException;
+import com.hmall.common.utils.BeanUtils;
+import com.hmall.common.utils.CollUtils;
+import com.hmall.common.utils.UserContext;
 
 import com.hmall.user.domain.dto.AddressDTO;
 import com.hmall.user.domain.po.Address;

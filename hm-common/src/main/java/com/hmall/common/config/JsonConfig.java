@@ -1,4 +1,4 @@
-package com.hmall.item.common.config;
+package com.hmall.common.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
