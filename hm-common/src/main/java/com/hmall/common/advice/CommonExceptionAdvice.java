@@ -1,10 +1,10 @@
-package com.hmall.item.common.advice;
+package com.hmall.common.advice;
 
-import com.hmall.item.common.domain.R;
-import com.hmall.item.common.exception.BadRequestException;
-import com.hmall.item.common.exception.CommonException;
-import com.hmall.item.common.exception.DbException;
-import com.hmall.item.common.utils.WebUtils;
+import com.hmall.common.domain.R;
+import com.hmall.common.exception.BadRequestException;
+import com.hmall.common.exception.CommonException;
+import com.hmall.common.exception.DbException;
+import com.hmall.common.utils.WebUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.ObjectError;

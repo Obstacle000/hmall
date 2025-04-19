@@ -1,6 +1,6 @@
-package com.hmall.item.common.domain;
+package com.hmall.common.domain;
 
-import com.hmall.item.common.exception.CommonException;
+import com.hmall.common.exception.CommonException;
 import lombok.Data;
 
 

@@ -1,6 +1,6 @@
 package com.hmall.item.domain.query;
 
-import com.hmall.item.common.domain.PageQuery;
+import com.hmall.common.domain.PageQuery;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;

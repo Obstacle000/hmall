@@ -1,4 +1,4 @@
-package com.hmall.item.common.config;
+package com.hmall.common.config;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;

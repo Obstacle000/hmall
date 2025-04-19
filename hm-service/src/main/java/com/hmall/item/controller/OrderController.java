@@ -1,6 +1,6 @@
 package com.hmall.item.controller;
 
-import com.hmall.item.common.utils.BeanUtils;
+import com.hmall.common.utils.BeanUtils;
 import com.hmall.item.domain.dto.OrderFormDTO;
 import com.hmall.item.domain.vo.OrderVO;
 import com.hmall.item.service.IOrderService;

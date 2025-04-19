@@ -1,10 +1,10 @@
 package com.hmall.item.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.hmall.item.common.exception.BadRequestException;
-import com.hmall.item.common.exception.BizIllegalException;
-import com.hmall.item.common.exception.ForbiddenException;
-import com.hmall.item.common.utils.UserContext;
+import com.hmall.common.exception.BadRequestException;
+import com.hmall.common.exception.BizIllegalException;
+import com.hmall.common.exception.ForbiddenException;
+import com.hmall.common.utils.UserContext;
 import com.hmall.item.config.JwtProperties;
 import com.hmall.item.domain.dto.LoginFormDTO;
 import com.hmall.item.domain.po.User;

@@ -6,9 +6,9 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.hmall.api.client.OrderClient;
 import com.hmall.api.client.UserClient;
 import com.hmall.api.po.Order;
-import com.hmall.item.common.exception.BizIllegalException;
-import com.hmall.item.common.utils.BeanUtils;
-import com.hmall.item.common.utils.UserContext;
+import com.hmall.common.exception.BizIllegalException;
+import com.hmall.common.utils.BeanUtils;
+import com.hmall.common.utils.UserContext;
 
 import com.hmall.pay.domain.dto.PayApplyDTO;
 import com.hmall.pay.domain.dto.PayOrderFormDTO;

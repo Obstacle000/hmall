@@ -1,6 +1,6 @@
 package com.hmall.item.controller;
 
-import com.hmall.item.common.exception.BizIllegalException;
+import com.hmall.common.exception.BizIllegalException;
 import com.hmall.item.domain.dto.PayApplyDTO;
 import com.hmall.item.domain.dto.PayOrderFormDTO;
 import com.hmall.item.enums.PayType;

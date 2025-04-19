@@ -1,4 +1,4 @@
-package com.hmall.item.common.exception;
+package com.hmall.common.exception;
 
 public class BadRequestException extends CommonException{
 
