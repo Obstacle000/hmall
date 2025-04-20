@@ -62,3 +62,54 @@
 14:03:59:620  INFO 18604 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@1cc42abe[Running, pool size = 6, active threads = 0, queued tasks = 0, completed tasks = 273]
 14:03:59:625  INFO 18604 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 14:03:59:638  INFO 18604 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+14:25:16:991  INFO 22596 --- [main] com.hmall.user.UserApplication           : Starting UserApplication using Java 23.0.1 on LAPTOP-QO6FIFUE with PID 22596 (C:\Users\Chen\Desktop\develope_note\Spring\SpringCloud\hmall\user-service\target\classes started by Chen in C:\Users\Chen\Desktop\develope_note\Spring\SpringCloud\hmall)
+14:25:16:992 DEBUG 22596 --- [main] com.hmall.user.UserApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+14:25:16:993  INFO 22596 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "local"
+14:25:17:635  INFO 22596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+14:25:17:643  INFO 22596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+14:25:17:659  INFO 22596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+14:25:17:861  INFO 22596 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=cd4a56e5-e7ea-301c-b302-1d9d961c64f5
+14:25:18:215  INFO 22596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+14:25:18:216  INFO 22596 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+14:25:18:216  INFO 22596 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+14:25:18:216  INFO 22596 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+14:25:18:220  INFO 22596 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+14:25:18:228  INFO 22596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+14:25:18:229  INFO 22596 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+14:25:18:351  INFO 22596 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+14:25:18:351  INFO 22596 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1308 ms
+14:25:19:345  INFO 22596 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+14:25:19:928  INFO 22596 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 16fedaeb-713c-42bd-8048-675b4622b4b1
+14:25:19:974  INFO 22596 --- [main] org.reflections.Reflections              : Reflections took 21 ms to scan 1 urls, producing 3 keys and 6 values 
+14:25:19:991  INFO 22596 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 4 keys and 9 values 
+14:25:20:001  INFO 22596 --- [main] org.reflections.Reflections              : Reflections took 7 ms to scan 1 urls, producing 3 keys and 10 values 
+14:25:20:002  WARN 22596 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+14:25:20:007  INFO 22596 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 1 keys and 5 values 
+14:25:20:014  INFO 22596 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 1 keys and 7 values 
+14:25:20:020  INFO 22596 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 2 keys and 8 values 
+14:25:20:022  WARN 22596 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+14:25:20:022  INFO 22596 --- [main] com.alibaba.nacos.common.remote.client   : [16fedaeb-713c-42bd-8048-675b4622b4b1] RpcClient init label, labels = {module=naming, source=sdk}
+14:25:20:024  INFO 22596 --- [main] com.alibaba.nacos.common.remote.client   : [16fedaeb-713c-42bd-8048-675b4622b4b1] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+14:25:20:024  INFO 22596 --- [main] com.alibaba.nacos.common.remote.client   : [16fedaeb-713c-42bd-8048-675b4622b4b1] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+14:25:20:024  INFO 22596 --- [main] com.alibaba.nacos.common.remote.client   : [16fedaeb-713c-42bd-8048-675b4622b4b1] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+14:25:20:025  INFO 22596 --- [main] com.alibaba.nacos.common.remote.client   : [16fedaeb-713c-42bd-8048-675b4622b4b1] Try to connect to server on start up, server: {serverIp = '192.168.194.128', server main port = 8848}
+14:25:20:679  INFO 22596 --- [main] com.alibaba.nacos.common.remote.client   : [16fedaeb-713c-42bd-8048-675b4622b4b1] Success to connect to server [192.168.194.128:8848] on start up, connectionId = 1745130320958_192.168.194.1_53994
+14:25:20:680  INFO 22596 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [16fedaeb-713c-42bd-8048-675b4622b4b1] Notify connected event to listeners.
+14:25:20:680  INFO 22596 --- [main] com.alibaba.nacos.common.remote.client   : [16fedaeb-713c-42bd-8048-675b4622b4b1] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+14:25:20:681  INFO 22596 --- [main] com.alibaba.nacos.common.remote.client   : [16fedaeb-713c-42bd-8048-675b4622b4b1] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda/0x0000025eca930ac0
+14:25:20:734  INFO 22596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+14:25:20:743  INFO 22596 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.194.1:8083 register finished
+14:25:20:747  INFO 22596 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+14:25:20:749  INFO 22596 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+14:25:20:766  INFO 22596 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+14:25:20:849  INFO 22596 --- [main] com.hmall.user.UserApplication           : Started UserApplication in 4.252 seconds (JVM running for 4.765)
+14:25:21:254  INFO 22596 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [16fedaeb-713c-42bd-8048-675b4622b4b1] Receive server push request, request = NotifySubscriberRequest, requestId = 21
+14:25:21:266  INFO 22596 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [16fedaeb-713c-42bd-8048-675b4622b4b1] Ack server push request, request = NotifySubscriberRequest, requestId = 21
+14:25:50:764  INFO 22596 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:25:50:765  INFO 22596 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+14:25:50:773  INFO 22596 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+14:25:50:941  INFO 22596 --- [http-nio-8083-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+14:25:51:192  INFO 22596 --- [http-nio-8083-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+14:25:51:197 DEBUG 22596 --- [http-nio-8083-exec-1] c.h.user.mapper.UserMapper.selectList    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+14:25:51:215 DEBUG 22596 --- [http-nio-8083-exec-1] c.h.user.mapper.UserMapper.selectList    : ==> Parameters: jack(String)
+14:25:51:240 DEBUG 22596 --- [http-nio-8083-exec-1] c.h.user.mapper.UserMapper.selectList    : <==      Total: 1
